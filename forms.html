@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms Assignment</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<h1>Example Form</h1>
+	<form method="post">
+		<table cellspacing="10px">
+			<tr>
+				<td><img src="images/valencia_logo.PNG"></td>
+				<td><legend><b>New Applicant Form</b></legend></td>
+			</tr>
+			<tr>
+				<td><label for="txtFName">First Name</label></td>
+				<td><input type="text" name="txtFName" placeholder="John"required></td>
+			</tr>
+			<tr>
+				<td><label for="txtLName">Last Name</label></td>
+				<td><input type="text" name="txtLName" placeholder="Doe" required> <br /></td>
+			</tr>
+			<tr>
+				<td>Select your sex:</td>
+				<td><label for="radMale">Male</label>
+				<input type="radio" id="radMale" name="radSex">
+				<label for="radFemale">Female</label>
+				<input type="radio" id="radFemale" name="radSex"></td>
+			</tr>
+			<tr>
+				<td>Please select one or more colors:</td>
+				<td><input type="checkbox" name="chkRed"> Red
+				<input type="checkbox" name="chkWhite"> White
+				<input type="checkbox" name="chkBlue"> Blue</td>
+			</tr>
+			<tr>
+				<td>Select your favorite sport out of<br />what is listed.</td>
+				<td><select name="selSports">
+					<option selected value="">Select a sport</option>
+					<option value="football">Football</option>
+					<option value="baseball">Baseball</option>
+					<option value="golf">Golf</option>
+					<option value="soccer">Soccer</option>
+					<option value="basketball">Basketball</option>
+					<option value="raquetball">Raquetball</option>
+					<option value="tennis">Tennis</option>
+					<option value="volleyball">Volleyball</option>
+					<option value="track">Track</option>
+					<option value="swimming">Swimming</option>
+				</select></td>
+			</tr>
+		</table>
+
+		<p>Feel free to share your thoughts on global warming below.</p>
+		<textarea name="txtGWarming" rows="20" cols="50" placeholder="Type your text here."></textarea>
+		<p>Please enter a password. (Minimum 10 characters)</p>
+		<input type="password" name="txtPassword" minlength="10">
+		<p>You may upload a file here. <br />
+		<input type="file" name="fileUpload"></p>
+		<p>Finally, press the submit button to submit the form. <br />
+		<input type="submit" name="submit"></p>
+	</form>
+	<hr /><a href="index.html" class="homepage">Back to the Homepage</a>
+
+
+
+
+</body>
+</html>
