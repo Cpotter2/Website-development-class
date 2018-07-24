@@ -5,28 +5,46 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<h1>Java Script Assignment</h1>
-	<p>This page has a JS script that generates some text based on the two numbers (x and y) you enter below. It will calculate:
-	<ul>
-		<li>The sum of x and y,</li>
-		<li>The product of x and y, and</li>
-		<li>Which number is greater, x or y.</li>
-	</ul>
-	Enter the numbers in the form below.</p>
-	<hr /><a href="index.html" class="homepage">Back to the Homepage</a><br />
-	<form style="margin-top:25px;"><caption><b>Number Processor</b></caption><table>
-		<tr>
-			<td>Enter a number x:</td>
-			<td><input type="text" id="x" name="x" width="5" autocomplete="off"></td>
-		</tr>
-		<tr>
-			<td>Enter a number y:</td>
-			<td><input type="text" id="y" name="y" width="6" autocomplete="off"></td>
-		</tr>
-		<tr>
-		<td><input type="submit" name="btnSubmit" id="btnSubmit" onclick="myDisplay()"></td>
-		</tr>
-	</table></form>
+	<header>
+        <h1>Javascript Math</h1>
+        <nav>
+            <ul class="nav-flex-wrapper">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="oldindex.html">First Page</a></li>
+                <li><a href="favoritefood.html">Favorite Food</a></li>
+                <li><a href="links.html">Links</a></li>
+                <li><a href="tables.html">Table</a></li>
+                <li><a href="forms.html">Form</a></li>
+                <li><a id="current-page">Javascript</a></li>
+                <li><a href="other-links.html">Other Links</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <p>This page has a JS script that generates some text based on the two numbers (x and y) you enter below. It will calculate:</p>
+        <ul>
+            <li>The sum of x and y,</li>
+            <li>The product of x and y, and</li>
+            <li>Which number is greater, x or y.</li>
+        </ul>
+        Enter the numbers in the form below.
+        <form style="margin-top:25px;"><caption><b>Number Processor</b></caption><table>
+            <tr>
+                <td>Enter a number x:</td>
+                <td><input type="text" id="x" name="x" width="5" autocomplete="off"></td>
+            </tr>
+            <tr>
+                <td>Enter a number y:</td>
+                <td><input type="text" id="y" name="y" width="6" autocomplete="off"></td>
+            </tr>
+            <tr>
+            <td><input type="submit" name="btnSubmit" id="btnSubmit" onclick="myDisplay()"></td>
+            </tr>
+        </table></form>
+    </section>
+    <footer>
+        <hr /><i>Website design by Colton Potter for COP-2822C</i>
+    </footer>
 <script type="text/javascript">
 	function myDisplay() {
 		var x = parseInt(document.getElementById('x').value);
